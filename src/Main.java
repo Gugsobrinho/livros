@@ -7,11 +7,12 @@ public class Main {
         List<Book> livros = new DatasetReader().readDataset("src/data.csv");
         Book livro = new Book();
 
-        System.out.print(livro.numberOfBookByAuthor(livros, "J.K. Rowling"));
-        System.out.println("\n");
-        System.out.print(livro.listaAutor(livros));
-        System.out.println("\n");
-        livro.livrosDoAutor(livros, "J.K. Rowling");
-        System.out.println("\n");
+//        System.out.print(livro.numberOfBookByAuthor(livros, "J.K. Rowling"));
+//        System.out.println("\n");
+//        System.out.print(livro.listaAutor(livros));
+//        System.out.println("\n");
+//        livro.livrosDoAutor(livros, "J.K. Rowling");
+//        System.out.println("\n");
+        livro.avaliacao(livros, "4.6");
     }
 }

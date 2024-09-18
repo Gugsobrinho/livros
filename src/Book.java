@@ -97,5 +97,13 @@ public class Book {
         }
     }
 
-
+    public void avaliacao(List<Book> livros, String nota){
+        List<String> colecao = new ArrayList<>();
+        for (Book book : livros) {
+            if (book.userRating.equals(nota) && !colecao.contains(book.title)) {
+                System.out.println(book.title + " de " + book.author);
+                colecao.add(book.title);
+            }
+        }
+    }
 }
